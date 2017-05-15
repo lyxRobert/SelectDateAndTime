@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_select"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_margin="10dp"
+    android:background="@drawable/border_circle_radius"
+    android:orientation="vertical" >
+<TextView
+    android:background="#2f19dfbb"
+    android:padding="10dp"
+    android:id="@+id/tv_pop_title"
+    android:textSize="18sp"
+    android:gravity="center"
+    android:textColor="#301616"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/timePicker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <liuyongxiang.robert.com.testtime.wheelview.WheelView
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <liuyongxiang.robert.com.testtime.wheelview.WheelView
+            android:id="@+id/day"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <liuyongxiang.robert.com.testtime.wheelview.DashedLineView
+            android:layout_width="1dp"
+            android:background="@drawable/dotted_line"
+            android:layout_height="match_parent" />
+        <liuyongxiang.robert.com.testtime.wheelview.WheelView
+            android:id="@+id/hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <liuyongxiang.robert.com.testtime.wheelview.DashedLineView
+            android:layout_width="1dp"
+            android:background="@drawable/dotted_line"
+            android:layout_height="match_parent" />
+        <liuyongxiang.robert.com.testtime.wheelview.WheelView
+            android:id="@+id/mins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2f19dfbb"
+        android:padding="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="#ff0000"
+            android:layout_weight="1"
+            android:text="取消" />
+
+
+        <TextView
+            android:id="@+id/tv_ensure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#414341"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="确定" />
+    </LinearLayout>
+
+
+</LinearLayout>

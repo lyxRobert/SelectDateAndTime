@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="90"
+    android:toDegrees="180" >
+<shape
+    android:shape="line">
+    <!-- 显示一条虚线，破折线的宽度为dashWith，破折线之间的空隙的宽度为dashGap，当dashGap=0dp时，为实线 -->
+    <stroke
+        android:width="2dp"
+        android:dashGap="1dp"
+        android:dashWidth="5dp"
+        android:color="#262626" />
+    <size android:height="200dp"></size>
+</shape>
+</rotate>

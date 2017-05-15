@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_select"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/icon_cancel"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#414341"
+            android:text="年月日"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0.8dp"
+            android:layout_height="match_parent"
+            android:background="#66888888">
+
+        </View>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="直播时间"
+            android:textColor="#414341"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_ensure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/icon_ensure" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#66888888"></View>
+
+    <include
+        android:id="@+id/date_select"
+        layout="@layout/date_select_layout"></include>
+
+    <include
+        android:id="@+id/time_select"
+        layout="@layout/time_select_layout"
+        android:visibility="gone"></include>
+</LinearLayout>

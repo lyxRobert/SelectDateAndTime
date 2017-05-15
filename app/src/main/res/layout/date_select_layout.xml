@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="#FFFFFF"
+    >
+    <LinearLayout
+        android:id="@+id/timePicker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <liuyongxiang.robert.com.testtime.wheelview.RangeWheelView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <liuyongxiang.robert.com.testtime.wheelview.RangeWheelView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <liuyongxiang.robert.com.testtime.wheelview.RangeWheelView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
